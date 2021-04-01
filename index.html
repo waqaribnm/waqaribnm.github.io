@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Waqar Ahmad Khan - Software Engineer</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -10,6 +11,7 @@
 		body {
 			background: #0d1117;
 			color:#f0f6fc;
+			font-family: 'Poppins', sans-serif;
 		}
 
 		span {
@@ -31,13 +33,18 @@
 		a {
 			font-weight: bold;
 		}
+
+		.hey{
+			font-size: 60px;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>
 	<div class="container">
 		<header>
 				<br><h1>Waqar Ahmad Khan</h1>
-				<p><strong>Software Engineer</strong></p>
+				<h4>Software Engineer</h4>
 		</header>
 			<main>
 		<section>
@@ -49,6 +56,12 @@
 			<br><span> <i class="ri-service-line"></i> I’m looking to collaborate on Machine Learning and Social Network Analysis</span>
 			<br><span> <i class="ri-twitter-line"></i> Reach me at <a href="https://twitter.com/waqaribnm">@waqaribnm</a></span>
 		</section>
+		<br>
+		<div>
+			<p><span class="hey">Hey!</span></p>
+			<p> Here is my blog, you will find awesome articles.</p>
+			<button style="font-size: 30px;" class="button" onclick="openBlog()">Blog</button>
+		</div>
 	</main>
 
 	<footer class="footer">
@@ -59,4 +72,9 @@
 
 
 </body>
+<script>
+function openBlog() {
+  location.replace("https://blog.waqarahmadkhan.me")
+}
+</script>
 </html>
